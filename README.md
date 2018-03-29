@@ -9,10 +9,14 @@ This manges Mercury (Chambers, 2001) and GENGA (Grimm et al 2014) simulations.
 
 Steps:
 1) Place the file config in ~/.ssh and change your username.
-2) login to bluewaters and place resub.py in your home directory.
+2) login to bluewaters and place resub.py in your home directory and edit your username at the begining of the file.
 3) Make sure all Mercury simulations are 2 subdirectories deep in your scratch directory.
 
 a) Mercury simulations should be managed using scheduler.x (https://github.com/ncsa/Scheduler)
 
 4) Make sure all Genga simulations are in there own directory in scratch.
-5) Run ./job_manage.sh on your local machine at let it do all the work for you!
+
+a) Use the submit script run_genga (provided) to submit them.
+
+5) Create a directory called 'results' in your home directory (when jobs are done they will be transfered there.
+6) Run ./job_manage.sh on your local machine at let it do all the work for you!
