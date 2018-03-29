@@ -1,0 +1,6 @@
+Host bw
+    ControlMaster auto
+    ControlPath ~/.ssh/cm_socket/%r@%h:%p
+    HostName bw.ncsa.illinois.edu
+    User clement
+    ControlPersist 950400s
